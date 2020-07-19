@@ -24,7 +24,7 @@ class CalculatorTest: QuickSpec {
                 let expected = 3.3 // 3.3
                 let actual = Calculator.add(1.1, 2.2) // 3.3000000000000003
                 
-                expect(actual).to(equal(expected), description: diff(between: expected, and: actual))
+                expect(actual).to(beCloseTo(expected, within: 0.0001), description: diff(between: expected, and: actual))
             }
         }
     }
