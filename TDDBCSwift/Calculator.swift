@@ -9,7 +9,14 @@
 import Foundation
 
 class Calculator {
-    class func add(a: Int, b: Int) -> Int {
-        return 1
+    class func add(_ a: Int, _ b: Int) -> Int {
+        return a + b
     }
+    class func add(_ a: Double, _ b: Double) -> Double {
+        return a + b
+    }
+}
+
+extension Calculator {
+    // 引き算を書く
 }
