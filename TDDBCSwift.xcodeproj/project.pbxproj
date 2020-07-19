@@ -18,6 +18,8 @@
 		62D11DAD1F7F580E00739528 /* ExampleQuickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D11DAC1F7F580E00739528 /* ExampleQuickTests.swift */; };
 		62D11DB61F7F614E00739528 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D11DB01F7F601E00739528 /* Nimble.framework */; };
 		62D11DB71F7F614E00739528 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D11DB11F7F601E00739528 /* Quick.framework */; };
+		DC043BE024C3FA2E0037C12C /* CalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC043BDF24C3FA2E0037C12C /* CalculatorTest.swift */; };
+		DC043BE224C3FC170037C12C /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC043BE124C3FC170037C12C /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		62D11DAC1F7F580E00739528 /* ExampleQuickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleQuickTests.swift; sourceTree = "<group>"; };
 		62D11DB01F7F601E00739528 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		62D11DB11F7F601E00739528 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		DC043BDF24C3FA2E0037C12C /* CalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTest.swift; sourceTree = "<group>"; };
+		DC043BE124C3FC170037C12C /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				62D11D931F7F56EC00739528 /* LaunchScreen.storyboard */,
 				62D11D8E1F7F56EC00739528 /* Main.storyboard */,
 				2475E38E726EC3D670B210AF /* Sample.swift */,
+				DC043BE124C3FC170037C12C /* Calculator.swift */,
 				62D11D8C1F7F56EC00739528 /* ViewController.swift */,
 			);
 			path = TDDBCSwift;
@@ -124,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				62D11DAC1F7F580E00739528 /* ExampleQuickTests.swift */,
+				DC043BDF24C3FA2E0037C12C /* CalculatorTest.swift */,
 			);
 			path = Quick;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 					};
 					62D11D9A1F7F56EC00739528 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 62D11D861F7F56EC00739528;
 					};
@@ -273,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62D11D8D1F7F56EC00739528 /* ViewController.swift in Sources */,
+				DC043BE224C3FC170037C12C /* Calculator.swift in Sources */,
 				62D11D8B1F7F56EC00739528 /* AppDelegate.swift in Sources */,
 				2475E28BE43743071E748308 /* Sample.swift in Sources */,
 			);
@@ -284,6 +292,7 @@
 			files = (
 				62D11DAD1F7F580E00739528 /* ExampleQuickTests.swift in Sources */,
 				62D11DA01F7F56EC00739528 /* ExampleXCTestTests.swift in Sources */,
+				DC043BE024C3FA2E0037C12C /* CalculatorTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,7 +500,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.devtesting.tddbc.TDDBCSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDBCSwift.app/TDDBCSwift";
 			};
@@ -515,7 +524,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.devtesting.tddbc.TDDBCSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDBCSwift.app/TDDBCSwift";
 			};
