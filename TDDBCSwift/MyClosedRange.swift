@@ -9,4 +9,9 @@
 import Foundation
 
 struct MyClosedRange {
+    let lowerEndPoint: Int
+    
+    init(lowerEndPoint: Int) {
+        self.lowerEndPoint = lowerEndPoint
+    }
 }
