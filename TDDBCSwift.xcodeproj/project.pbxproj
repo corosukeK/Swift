@@ -20,8 +20,8 @@
 		62D11DB71F7F614E00739528 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D11DB11F7F601E00739528 /* Quick.framework */; };
 		DC043BE024C3FA2E0037C12C /* CalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC043BDF24C3FA2E0037C12C /* CalculatorTest.swift */; };
 		DC043BE224C3FC170037C12C /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC043BE124C3FC170037C12C /* Calculator.swift */; };
-		DC0EB11724D5283000471DDC /* ClosedRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EB11624D5283000471DDC /* ClosedRange.swift */; };
-		DC0EB11924D5285800471DDC /* ClosedRangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EB11824D5285800471DDC /* ClosedRangeTests.swift */; };
+		DC0EB11724D5283000471DDC /* MyClosedRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EB11624D5283000471DDC /* MyClosedRange.swift */; };
+		DC0EB11924D5285800471DDC /* MyClosedRangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0EB11824D5285800471DDC /* MyClosedRangeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,8 @@
 		62D11DB11F7F601E00739528 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		DC043BDF24C3FA2E0037C12C /* CalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTest.swift; sourceTree = "<group>"; };
 		DC043BE124C3FC170037C12C /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
-		DC0EB11624D5283000471DDC /* ClosedRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedRange.swift; sourceTree = "<group>"; };
-		DC0EB11824D5285800471DDC /* ClosedRangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedRangeTests.swift; sourceTree = "<group>"; };
+		DC0EB11624D5283000471DDC /* MyClosedRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClosedRange.swift; sourceTree = "<group>"; };
+		DC0EB11824D5285800471DDC /* MyClosedRangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClosedRangeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 				62D11D8E1F7F56EC00739528 /* Main.storyboard */,
 				2475E38E726EC3D670B210AF /* Sample.swift */,
 				DC043BE124C3FC170037C12C /* Calculator.swift */,
-				DC0EB11624D5283000471DDC /* ClosedRange.swift */,
+				DC0EB11624D5283000471DDC /* MyClosedRange.swift */,
 				62D11D8C1F7F56EC00739528 /* ViewController.swift */,
 			);
 			path = TDDBCSwift;
@@ -135,7 +135,7 @@
 			children = (
 				62D11DAC1F7F580E00739528 /* ExampleQuickTests.swift */,
 				DC043BDF24C3FA2E0037C12C /* CalculatorTest.swift */,
-				DC0EB11824D5285800471DDC /* ClosedRangeTests.swift */,
+				DC0EB11824D5285800471DDC /* MyClosedRangeTests.swift */,
 			);
 			path = Quick;
 			sourceTree = "<group>";
@@ -288,7 +288,7 @@
 				62D11D8D1F7F56EC00739528 /* ViewController.swift in Sources */,
 				DC043BE224C3FC170037C12C /* Calculator.swift in Sources */,
 				62D11D8B1F7F56EC00739528 /* AppDelegate.swift in Sources */,
-				DC0EB11724D5283000471DDC /* ClosedRange.swift in Sources */,
+				DC0EB11724D5283000471DDC /* MyClosedRange.swift in Sources */,
 				2475E28BE43743071E748308 /* Sample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,7 +300,7 @@
 				62D11DAD1F7F580E00739528 /* ExampleQuickTests.swift in Sources */,
 				62D11DA01F7F56EC00739528 /* ExampleXCTestTests.swift in Sources */,
 				DC043BE024C3FA2E0037C12C /* CalculatorTest.swift in Sources */,
-				DC0EB11924D5285800471DDC /* ClosedRangeTests.swift in Sources */,
+				DC0EB11924D5285800471DDC /* MyClosedRangeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
