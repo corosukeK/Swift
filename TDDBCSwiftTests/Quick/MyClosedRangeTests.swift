@@ -15,24 +15,25 @@ class MyClosedRangeTests: QuickSpec {
     
     override func spec() {
         describe("整数閉区間オブジェクト"){
-            var expectedRange: (Int, Int)!
-            beforeEach {
-                expectedRange = (3,8)
-            }
-            it("は下端点3をコンストラクタに与えるとlowerEndPointが3になる") {
-                let expected = 3
-                let range = MyClosedRange(lowerEndPoint: expected, upperEndPoint: 0)
-                let actual = range.lowerEndPoint
-                
-                expect(actual).to(equal(expected),description: diff(between: expected, and: actual))
-            }
-            it("は上端点8をコンストラクタに与えるとupperEndPointが8になる") {
-                let expected = 8
-                let range = MyClosedRange(lowerEndPoint: 0, upperEndPoint: 8)
-                let actual = range.upperEndPoint
+            context("でコンストラクタに下端点3、上端点8を与えると"){
+                let expected_lower = 3
+                let expected_upper = 8
+                let range: MyClosedRange = MyClosedRange(lowerEndPoint: expected_lower, upperEndPoint: expected_upper)
 
-                expect(actual).to(equal(expected),description: diff(between: expected, and: actual))
+
+                it("lowerEndPointが3になる") {
+                    let actual = range.lowerEndPoint
+
+                    expect(actual).to(equal(expected_lower),description: diff(between: expected_lower, and: actual))
+                }
+                it("upperEndPointが8になる") {
+                    let actual = range.upperEndPoint
+
+                    expect(actual).to(equal(expected_upper),description: diff(between: expected_upper, and: actual))
+                }
             }
+
         }
+
     }
 }
