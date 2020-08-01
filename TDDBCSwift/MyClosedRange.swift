@@ -13,6 +13,7 @@ struct MyClosedRange {
     let upperEndPoint: Int
     
     init(lowerEndPoint: Int, upperEndPoint: Int) {
+        precondition(lowerEndPoint <= upperEndPoint)
         self.lowerEndPoint = lowerEndPoint
         self.upperEndPoint = upperEndPoint
     }

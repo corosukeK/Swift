@@ -13,9 +13,9 @@ import MirrorDiffKit
 
 class MyClosedRangeTests: QuickSpec {
     override func spec() {
-        describe("整数閉区間オブジェクト"){
+        describe("整数閉区間"){
             var range: MyClosedRange!
-            context("でコンストラクタに下端点3、上端点8を与えると"){
+            context("に下端点3、上端点8を与えると"){
                 beforeEach {
                     range = MyClosedRange(lowerEndPoint: 3, upperEndPoint: 8)
                 }
@@ -29,16 +29,24 @@ class MyClosedRangeTests: QuickSpec {
                     let actual = range.upperEndPoint
                     expect(actual).to(equal(expected),description: diff(between: expected, and: actual))
                 }
-                it("descriptionが\"[3,8]\"になる") {
+                it("descriptionが[3,8]になる") {
                     let expected = "[3,8]"
                     let actual = range.description
                     expect(actual).to(equal(expected), description: diff(between: expected, and: actual))
                 }
             }
-            context("でコンストラクタに下端点8、上端点3を与えると") {
+            context("に下端点8、上端点3を与えると") {
                 it("実行時エラーになる") {
-                    let range = MyClosedRange(lowerEndPoint: 8, upperEndPoint: 3)
-                    
+                    expect{
+                        _ = MyClosedRange(lowerEndPoint: 8, upperEndPoint: 3)
+                    }.to(throwAssertion())
+                }
+            }
+            context("に下端点3、上端点3を与えると"){
+                it("実行時エラーにならない") {
+                    expect{
+                        _ = MyClosedRange(lowerEndPoint: 3, upperEndPoint: 3)
+                    }.notTo(throwAssertion())
                 }
             }
         }
