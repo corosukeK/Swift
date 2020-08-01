@@ -17,3 +17,9 @@ struct MyClosedRange {
         self.upperEndPoint = upperEndPoint
     }
 }
+
+extension MyClosedRange: CustomStringConvertible {
+    var description: String {
+        return "[\(lowerEndPoint),\(upperEndPoint)]"
+    }
+}

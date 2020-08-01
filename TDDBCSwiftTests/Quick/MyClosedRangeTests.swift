@@ -20,7 +20,6 @@ class MyClosedRangeTests: QuickSpec {
                 let expected_upper = 8
                 let range: MyClosedRange = MyClosedRange(lowerEndPoint: expected_lower, upperEndPoint: expected_upper)
 
-
                 it("lowerEndPointが3になる") {
                     let actual = range.lowerEndPoint
 
@@ -31,9 +30,12 @@ class MyClosedRangeTests: QuickSpec {
 
                     expect(actual).to(equal(expected_upper),description: diff(between: expected_upper, and: actual))
                 }
+                it("descriptionが\"[3,8]\"になる") {
+                    let expected = "[3,8]"
+                    let actual = range.description
+                    expect(actual).to(equal(expected), description: diff(between: expected, and: actual))
+                }
             }
-
         }
-
     }
 }
