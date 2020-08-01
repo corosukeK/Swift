@@ -24,3 +24,7 @@ extension MyClosedRange: CustomStringConvertible {
         return "[\(lowerEndPoint),\(upperEndPoint)]"
     }
 }
+
+extension MyClosedRange: Equatable {
+    
+}
